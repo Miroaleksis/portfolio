@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	
+	
+<head>
+	<title>My Web Page</title>
+	<link href="Tyylit.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/x-icon" href="#"> <!--FAVICON-->
+	<script src="Javascript.js"></script>
+</head>
+	
+	
+	
+
+<body>	
+	
+	
+<!--NAVIGAATIO-->
+	
+	<div class="navbar">
+		<div class="logo-container"><h3>Logo</h3></div>
+		<input id="menu-toggle" type="checkbox"/><label class="hamburger-container" for="menu-toggle">
+			<div class="hamburger"></div>
+		</label>
+		<div class="menu">
+			<a class="menubutton current" href="#">Etusivu</a>
+			<div class="dropdown"><input id="submenu-toggle" type="checkbox"/>
+				<a class="menubutton" href="#">Alasvetosivu<label class="plus-container" for="submenu-toggle"><div class="plus"></div></label></a>
+				<div class="submenu">
+					<a class="menubutton" href="">Linkki</a>
+					<a class="menubutton" href="">Superpitkä&nbsplinkki</a>
+				</div>
+			</div>
+			<a class="menubutton" href="#">Normisivu</a>
+			<div class="dropdown"><input id="submenu-toggle2" type="checkbox"/>
+				<label class="menubutton" for="submenu-toggle2">Linkitön alasvetosivu<div class="plus-container"><div class="plus"></div></div></label>
+				<div class="submenu">
+					<a class="menubutton" href="">Linkki 2</a>
+					<a class="menubutton" href="">Superpitkä&nbsplinkki&nbsp2</a>
+				</div>
+			</div>
+		</div>  
+	</div>
+
+	 
+	
+<!--HERO-->	
+	
+	<div class="hero" style="color:white;">
+		<h1>Tervetuloa sivulleni!</h1>
+		<p>Kuvaus otsikon alla.</p>
+		<div class="minicolumn" style="gap:20px">
+			<a class="button" href="">Painike</a>
+			<a class="secondarybutton" href="" style="color: white">Painike 2</a>
+		</div>
+    </div>
+	
+	
+	
+<!--BODY-->
+	
+	<div class="content-field">
+		<h2>Otsikko</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in hendrerit lectus, ac euismod dui. Mauris luctus posuere iaculis. Curabitur sed tellus mauris. Vivamus blandit ligula eget porttitor euismod. Phasellus sit amet erat sollicitudin, convallis risus in, hendrerit erat. Vestibulum tincidunt, ante at consequat facilisis, massa augue ultricies justo, at elementum libero enim ac enim. Sed id ante sed neque placerat finibus. Integer ac magna eget dolor molestie semper quis ut ante. Pellentesque dolor ante, facilisis quis tortor sed, condimentum congue tortor. Phasellus sapien nisl, tempor sit amet felis sed, ultricies condimentum sem.<br><br>
+				
+		Sed imperdiet ipsum quis mi fringilla congue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas id nunc in ipsum bibendum faucibus. Nam posuere arcu vel mattis suscipit. Mauris accumsan, velit nec condimentum viverra, leo est interdum lacus, id interdum nisi ex a metus. Donec tempus tortor at lorem tempus scelerisque. Nam sit amet mauris ut massa mollis aliquet. Sed scelerisque urna vel vestibulum porta. Pellentesque laoreet sit amet turpis ac eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			
+		<h3>Alaotsikko</h3>
+			
+		<p>Sed imperdiet condimentum luctus. Praesent fringilla sem eu tortor laoreet, a suscipit tortor pulvinar. Praesent laoreet vel enim a aliquam. Vivamus ullamcorper pretium tellus, a sodales odio mollis non. Aliquam consectetur dui eros, id malesuada metus maximus et. Pellentesque lobortis non nibh eu placerat. Aliquam sollicitudin ultricies nisl, a finibus libero. Ut sit amet congue orci, quis eleifend mauris. Duis et nunc quis massa dapibus tristique. Nam rhoncus odio risus, nec efficitur justo pharetra nec.</p>
+	</div>
+	
+		
+	<div class="column">
+		<div class="content-field" style="min-height:50vh; max-height: 100%; justify-content:center; background-image: url('Liitteet/revontulet.jpg'); color:white; ">
+			<h2>Kuvaotsikko</h2>
+		</div>
+		<div class="content-field" style="background-color:var(--primary); color: white;">
+			<h3>Kuvaus</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in hendrerit lectus, ac euismod dui. Mauris luctus posuere iaculis. Curabitur sed tellus mauris. Vivamus blandit ligula eget porttitor euismod. Phasellus sit amet erat sollicitudin, convallis risus in, hendrerit erat.</p>
+			<a class="button" href="">Painike</a>
+		</div>
+	</div>
+	
+	<div class="content-field">
+		<h2>Sisältöä lisää</h2>
+		<div class="column">
+			<div class="content-field">
+				<div class="pictureframe"><img src="Liitteet/mies.jpg" alt="Mietteliäs mies"></div>
+				<h3>Sisältönosto 1</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat tellus eget elit sollicitudin, at pharetra ex aliquet.</p>
+				<a class="button" href="#">Nappi</a>
+			</div>
+			<div class="content-field">
+				<div class="pictureframe"><img src="Liitteet/mies.jpg" alt="Mietteliäs mies"></div>
+				<h3>Sisältönosto 2</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat tellus eget elit sollicitudin, at pharetra ex aliquet.</p>
+				<a class="button" href="#">Nappi</a>
+			</div>
+			<div class="content-field">
+				<div class="pictureframe"><img src="Liitteet/mies.jpg" alt="Mietteliäs mies"></div>
+				<h3>Sisältönosto 3</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat tellus eget elit sollicitudin, at pharetra ex aliquet.</p>
+				<a class="button" href="#">Nappi</a>
+			</div>
+		</div>
+	</div>
+	
+	
+
+<!--FOOTER-->
+	
+	<div class="footer" style="color:white">
+		<p><span>&#169;</span> Miro Eskelinen</p>
+		<div class="footersection">
+			<div class="minicolumn">
+				<i class="material-symbols-outlined md-regular">phone</i>
+				+358 (0)XX XXX XXXX
+			</div>
+			<div class="minicolumn">
+				<i class="material-symbols-outlined md-regular">mail</i>
+				verkkosivu@verkkosivu.fi
+			</div>
+		</div>
+		<div class="minicolumn">
+			<a href="#" class="fa fa-linkedin"></a>
+			<a href="#" class="fa fa-facebook"></a>
+		</div>		
+	</div>
+
+	
+</body>
+	
+</html>
