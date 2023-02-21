@@ -536,9 +536,8 @@ html, body {
 /* Navigaatio */
 	
 .navbar{
-	padding-right: 0;
-	padding-left: 12.5px;
-	width: calc(100% - 12.5px);
+	padding-right: calc(5% - 12.5px);
+	width: calc(95% - 12.5px);
 }
 
 	.menu {
