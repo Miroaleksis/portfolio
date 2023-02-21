@@ -449,7 +449,7 @@ html, body {
 	background-attachment: none; /* pysyykö paikallaan vai ei */
 	background-size: cover;
 	background-repeat: no-repeat;
-	align-items: center;
+	align-items:center;
 	transition: 0.2s ease-in-out;
 }
 
@@ -705,6 +705,7 @@ html, body {
 .column,
 .card {
 	flex-direction: column;
+	align-items: flex-start;
 }
 	
 	.reversed {
