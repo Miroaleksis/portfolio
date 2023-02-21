@@ -22,11 +22,8 @@ html, body {
 	/* Värit */
 
 	:root {
-		--primary: #011919;
-		--primary-light: #022626;
-		--secondary: #044d4d;
-		--tertiary: #d9b100;
-		--tertiary-light: #ffefa6;
+		--primary: #044d4d;
+		--secondary: #d9b100;
 		--text: #262626;
 		--text-light: rgba(0, 0, 0, 0.4);
 		--white-light: rgba(255, 255, 255, 0.7);
@@ -41,10 +38,6 @@ html, body {
 		
 		--cloubi-background: #00AAB5;
 		--cloubi-orange: #FA9A36;
-		
-		--staffroom-background: #003f6e;
-		
-		--citycon-background: #DF0069;
 	}
 
 
@@ -69,17 +62,16 @@ html, body {
 		font-size: 48px;
 		margin: 0 0 25px 0;
 		font-family: 'DM Serif Text', serif;
-		color: var(--secondary);
+		color: var(--primary);
 	}
 
-	.darkmode h1 {
-		color: var(--tertiary);
-	}
+		.darkmode h1 {
+			color: white;
+		}
 
 	h2 {
-		font-family: 'DM Serif Text', serif;
-		font-weight: normal;
-		font-size: 30px;
+		font-weight: bold;
+		font-size: 26px;
 		margin: 0 0 20px 0;
 	}
 
@@ -102,7 +94,7 @@ html, body {
 	}
 
 	a:hover {
-		color: var(--tertiary) !important;
+		color: var(--secondary) !important;
 	}
 
 	
@@ -125,13 +117,17 @@ html, body {
 		color: white !important;
 	}
 
+	.lightmode {
+		color: var(--text)
+	}
+
 	.fullscreen {
 		min-height: calc(100vh - 100px);
 	}
 
 	img {
 		max-width: 100%;
-		object-fit: contain;
+		object-fit: cover;
 	}
 
 	.button {
@@ -139,7 +135,7 @@ html, body {
 		padding: 0px 30px;
 		height: 40px;
 		width: fit-content;
-		background-color: var(--secondary);
+		background-color: var(--primary);
 		justify-content: center;
 		color: white;
 		align-items: center;
@@ -149,7 +145,7 @@ html, body {
 	}
 
 	.button:hover {
-		color: var(--tertiary) !important;
+		color: var(--secondary) !important;
 	}
 
 		.darkmode .button {
@@ -157,14 +153,18 @@ html, body {
 			color: var(--text);
 		}
 
-		.secondarybutton,
-		.darkmode .secondarybutton {
+		.secondarybutton {
 			/* background-color: rgba(255, 255, 255, 0.10); */
 			background: none;
-			color: white;
+			color: var(--primary);
 			outline: 2px solid;
 			outline-offset: -2px;
 		}
+
+			.darkmode .secondarybutton {
+				color: white;
+				background: none;
+			}
 
 	.minisection {
 		display: flex;
@@ -236,7 +236,7 @@ html, body {
 		}
 
 		.current {
-			color: var(--tertiary)!important;
+			color: var(--secondary)!important;
 		}
 
 
@@ -257,11 +257,11 @@ html, body {
 			}
 
 				.dropdown .submenu .menubutton{
-					background-color: var(--primary-light);
+					background-color: var(--primary);
 				}
 
 			.dropdown:hover .menubutton {
-				background-color: var(--primary-light);
+				background-color: var(--primary);
 				color: white;
 			}
 
@@ -296,12 +296,8 @@ html, body {
 				transition: transform ease-in-out 0.15s;
 			}
 
-			/* .navbar[active] .plus,
-			.navbar[active] .plus::before, */
 			.menubutton[active] .plus,
-			.menubutton[active] .plus::before
-			/* #menu-toggle:checked ~ .menu .dropdown .menubutton .plus,
-			#menu-toggle:checked ~ .menu .dropdown .menubutton .plus::before */{
+			.menubutton[active] .plus::before{
 				background-color: white;
 			}
 
@@ -351,15 +347,12 @@ html, body {
 
 			.darkmode .hamburger,
 			.darkmode .hamburger::before,
-			.darkmode .hamburger::after{
+			.darkmode .hamburger::after,
+			.navbar[active] .hamburger,
+			.navbar[active] .hamburger::before,
+			.navbar[active] .hamburger::after{
 				background-color: white;
 			}
-
-		.navbar[active] .hamburger,
-		.navbar[active] .hamburger::before,
-		.navbar[active] .hamburger::after{
-			background-color: white;
-		}
 
 		.hamburger::before {
 			content: '';
@@ -387,7 +380,6 @@ html, body {
 	background-attachment: fixed; /* pysyykö paikallaan vai ei */
 	background-size: cover;
 	background-repeat: no-repeat;
-	/* clip-path: polygon(100% 0px,100% calc(100% - 50px),50% 100%,0 calc(100% - 50px),0 0px); */
 }
 
 	.hero .content-field {
@@ -403,7 +395,7 @@ html, body {
 	align-items: flex-start;
 	overflow: hidden;
 	margin: 0 0 10px 0;
-	background-position: center; /* kuvan sijainti taustalla */
+	background-position: left; /* kuvan sijainti taustalla */
 	background-size: cover;
 }
 
@@ -436,17 +428,13 @@ html, body {
 		padding-inline-start: 1em;
 	}
 
-	.content-field .column,
-	.hero .column { /* Gap vain kun column on content-fieldin sisällä */
-		gap: 0 25px;
-	}
-
 .column { /* HUOM. ei gappia */
 	display: flex;
 	height: 100%;
 	width: 100%;
 	flex-direction: row;
 	justify-content: center;
+	gap: 0 25px;
 }
 
 .card {
@@ -461,6 +449,7 @@ html, body {
 	background-attachment: none; /* pysyykö paikallaan vai ei */
 	background-size: cover;
 	background-repeat: no-repeat;
+	align-items: center;
 	transition: 0.2s ease-in-out;
 }
 
@@ -468,50 +457,41 @@ html, body {
 	margin-top: 0px;
 }
 
-	 .card .content-field{
-		border-radius: 10px;
-		justify-content: flex-start;
-		background-size: cover;
-		background-position: left;
+	.card .pictureframe {
+		max-width: 50%;
 	}
 
 .screen {
 	display: flex;
-	height: fit-content;
 	border-radius: 10px;
+	max-height: 65vh;
 	margin: 15px 0;
-	width: fit-content;
 	overflow: hidden;
 	box-shadow: 25px 25px 50px rgba(0, 0, 0, 0.25);
+	width: fit-content;
+	height: fit-content;
 }
-
-	.screen img {
-		max-height: 65vh;
-	}
 
 .gallery {
 	display: flex;
+	align-items: flex-start;
 	flex-wrap: wrap;
 	gap: 0 20px;
 	height: 100%;
 	width: 100%;
+	margin-bottom: 20px;
 }
 
 	.galleryimage {
 		display: flex;
-		width: 23%;
-		min-width: 200px;
+		width: 150px;
 		aspect-ratio: 1/1;
-		border-radius: 10px;
+		border-radius: 5px;
 		margin: 10px 0 10px;
 		overflow: hidden;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-		background-position: center; /* kuvan sijainti taustalla */
-		background-attachment: none; /* pysyykö paikallaan vai ei */
-		background-size: cover;
-		background-repeat: no-repeat;
 	}
 
 	.galleryimage:hover {
@@ -519,15 +499,6 @@ html, body {
 		margin-bottom: 20px;
 		transition: 0.2s ease-in-out;
 	}
-
-		.galleryimage img {
-			object-fit: cover;
-			max-width: none;
-		}
-
-		.galleryimage h3 {
-			display: none;
-		}
 
 
 
@@ -588,7 +559,7 @@ html, body {
 			justify-content: space-between;
 			width: calc(100% - 15px);
 			padding-right: 0;
-			background-color: var(--primary-light);
+			background-color: var(--primary);
 			margin-bottom: 2px;
 			cursor: pointer;
 		}
@@ -627,7 +598,7 @@ html, body {
 					border: 2px;
 					border-left-style: solid;
 					border-color: var(--primary);
-					background-color: var(--primary-light);
+					background-color: var(--primary);
 				}
 	
 				.menubutton:has(.plus-container:hover),
@@ -636,7 +607,7 @@ html, body {
 				.menubutton[active],
 				.menubutton[active] .plus-container,
 				.menubutton[active]:has(.plus-container:hover) {
-					background-color: var(--primary-light)!important;
+					background-color: var(--primary)!important;
 				}
 
 					.menubutton[active] .plus-container .plus::before{
