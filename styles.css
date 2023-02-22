@@ -371,24 +371,18 @@ html, body {
 .hero {
 	width: 90%;
 	height: fit-content;
-	min-height: calc(100vh - 100px); /* 100vh tunnuksella koko sivun leveydelle */
+	min-height: calc(100vh - 125px); /* 100vh tunnuksella koko sivun leveydelle */
 	display: flex;
 	gap: 0 25px;
-	align-items: center;
-	padding: 75px 5% 25px 5%;
+	padding: 100px 5% 25px 5%;
 	background-position: center; /* kuvan sijainti taustalla */
 	background-attachment: fixed; /* pysyykö paikallaan vai ei */
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
-	.hero .content-field {
-		justify-content: center;
-	}
-
 .pictureframe {
 	display: flex;
-	max-width: 100%;
 	aspect-ratio: 1/1;
 	border-radius: 100%;
 	justify-content: center;
@@ -397,6 +391,13 @@ html, body {
 	margin: 0 0 20px 0;
 	background-position: left; /* kuvan sijainti taustalla */
 	background-size: cover;
+}
+
+.picture {
+	display: flex;
+	aspect-ratio: 1/1;
+	max-width: 100%;
+	border-radius: 100%;
 }
 
 
@@ -443,23 +444,13 @@ html, body {
 	border-radius: 10px;
 	margin: 10px 0 20px 0;
 	gap: 0 5%;
-	/* box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); */
 	overflow: hidden;
-	background-position: center; /* kuvan sijainti taustalla */
-	background-attachment: none; /* pysyykö paikallaan vai ei */
-	background-size: cover;
-	background-repeat: no-repeat;
-	align-items:center;
 	transition: 0.2s ease-in-out;
 }
 
 .card:hover {
 	margin-top: 0px;
 }
-
-	.card .pictureframe {
-		max-width: 65%;
-	}
 
 .screen {
 	display: flex;
@@ -479,7 +470,7 @@ html, body {
 	gap: 0 20px;
 	height: 100%;
 	width: 100%;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 	.galleryimage {
