@@ -726,7 +726,7 @@ footer .navbar {
 }
 	
 .hero {
-	background-size: 75vh !important;
+	background-size: contain !important;
 }
 	
 }
