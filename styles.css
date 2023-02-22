@@ -182,7 +182,7 @@ html, body {
 
 		.minisection:has(.button) {
 			margin: 0 0 20px 0;
-			gap: 20px 5%;
+			gap: 20px;
 		}
 
 
