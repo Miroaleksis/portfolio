@@ -725,4 +725,8 @@ footer .navbar {
 	width: 90% !important;
 }
 	
+.hero {
+	background-size: 75vh !important;
+}
+	
 }
