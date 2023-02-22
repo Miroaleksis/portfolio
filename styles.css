@@ -722,6 +722,7 @@ footer .navbar {
 	
 .content-field {
 	align-items: flex-start !important;
+	width: 90% !important;
 }
 	
 }
