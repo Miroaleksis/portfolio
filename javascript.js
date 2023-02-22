@@ -2,13 +2,13 @@
 
 	window.addEventListener("scroll", function (e) {
 		const lastPosition = window.scrollY;
-		const navbar = document.querySelector(".navbar");
+		const header = document.querySelector("header");
 		if (lastPosition > 50) {
-			navbar.setAttribute("active", "");
-		} else if (navbar.hasAttribute("active")) {
-			navbar.removeAttribute("active");
+			header.setAttribute("active", "");
+		} else if (header.hasAttribute("active")) {
+			header.removeAttribute("active");
 		} else {
-			navbar.removeAttribute("active");
+			header.removeAttribute("active");
 		}
 	});
 

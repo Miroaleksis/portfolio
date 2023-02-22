@@ -14,7 +14,14 @@ html, body {
 	display: flex;
 	flex-direction: column;
 	scroll-behavior: smooth;
+	align-items: center;
+	width: 100%;
 }
+
+	body .navbar,
+	body .content-field {
+		max-width: calc(1100px - 10%);
+	}
 
 
 /* YLEISET */
@@ -189,23 +196,30 @@ html, body {
 
 /* NAVIGAATIOPALKKI */
 
-.navbar {
+header {
 	position: fixed;
-	width: 90%;
+	width: 100%;
   	display: flex;
   	flex-direction: row;
   	align-items: center;
- 	justify-content: space-between;
+ 	justify-content: center;
   	color: var(--primary);
   	height: fit-content;
-  	padding: 0 5%;
 	transition: 0.2s ease-in-out;
 	z-index: 10;
 }
 
-.navbar[active] {
+header[active] {
 	color: white;
 	background-color: var(--primary);
+}
+
+.navbar{
+	display: flex;
+	width: 90%;
+	padding: 0 5%;
+	justify-content: space-between;
+	align-items: center;
 }
 
 	.logo-container{
@@ -347,9 +361,9 @@ html, body {
 			.darkmode .hamburger,
 			.darkmode .hamburger::before,
 			.darkmode .hamburger::after,
-			.navbar[active] .hamburger,
-			.navbar[active] .hamburger::before,
-			.navbar[active] .hamburger::after{
+			header[active] .hamburger,
+			header[active] .hamburger::before,
+			header[active] .hamburger::after{
 				background-color: white;
 			}
 
@@ -368,14 +382,14 @@ html, body {
 /* HERO */
 
 .hero {
-	width: 90%;
+	width: 100%;
 	height: fit-content;
-	min-height: calc(100vh - 125px); /* 100vh tunnuksella koko sivun leveydelle */
+	min-height: 100vh; /* 100vh tunnuksella koko sivun leveydelle */
 	display: flex;
-	gap: 0 25px;
-	padding: 100px 5% 25px 5%;
+	flex-direction: column;
+	align-items: center;
 	background-position: center; /* kuvan sijainti taustalla */
-	background-attachment: fixed; /* pysyykö paikallaan vai ei */
+	background-attachment: inherit; /* pysyykö paikallaan vai ei */
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -390,6 +404,7 @@ html, body {
 	margin: 0 0 20px 0;
 	background-position: left; /* kuvan sijainti taustalla */
 	background-size: cover;
+	max-width: fit-content;
 }
 
 .picture {
@@ -415,9 +430,12 @@ html, body {
 	scroll-margin-top: 50px;
 }
 
+	.content-field:first-of-type{
+		padding-top: 100px;
+	}
+
 	.content-field .content-field,
-	.hero .content-field,
-	.footer .content-field {
+	footer .content-field {
 		padding: 0;
 		width: 100%;
 	}
@@ -430,7 +448,7 @@ html, body {
 
 .column { /* HUOM. ei gappia */
 	display: flex;
-	height: 100%;
+	height: fit-content;
 	width: 100%;
 	flex-direction: row;
 	justify-content: center;
@@ -494,16 +512,15 @@ html, body {
 
 /* FOOTER */
 
-.footer {
+footer {
 	margin-top: auto; /* Oleellinen footerin sijainnin kannalta jos sivulla ei sisältöä */
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	padding: 20px 5%;
+	justify-content: center;
+	padding: 20px 0;
 	background: var(--primary);
-	width: 90%;
+	width: 100%;
 	color: white;
-	gap: 20px 0;
 	align-items: center;
 }
 
@@ -623,9 +640,10 @@ html, body {
 	
 /* Footer */
 	
-.footer {
+footer .navbar {
 	flex-direction: column;
 	align-items: flex-start;
+	gap: 20px 0;
 }
 	
 	.footersection {

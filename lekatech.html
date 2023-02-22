@@ -33,54 +33,59 @@
 	
 <!--NAVIGAATIO-->
 	
-	<div class="navbar darkmode">
-		<a class="logo-container" href="index.html">Miro Eskelinen</a>
-		<input id="menu-toggle" type="checkbox"/>
-		<label class="hamburger-container" for="menu-toggle">
-			<div class="hamburger"></div>
-		</label>
-		<div class="menu">
-			<a class="menubutton" href="uxui.html">UX&nbsp;&amp;&nbsp;UI&nbsp;Design</a>
-			<a class="menubutton" href="graphicdesign.html">Graphic&nbsp;Design</a>
-			<a class="menubutton" href="aboutme.html">About&nbsp;me</a>
-		</div>  
-	</div>
+	<header class="darkmode">
+		<div class="navbar">
+			<a class="logo-container" href="index.html">Miro Eskelinen</a>
+			<input id="menu-toggle" type="checkbox"/>
+			<label class="hamburger-container" for="menu-toggle">
+				<div class="hamburger"></div>
+			</label>
+			<div class="menu">
+				<a class="menubutton" href="uxui.html">UX&nbsp;&amp;&nbsp;UI&nbsp;Design</a>
+				<a class="menubutton" href="graphicdesign.html">Graphic&nbsp;Design</a>
+				<a class="menubutton" href="aboutme.html">About&nbsp;me</a>
+			</div>
+		</div>
+	</header>
 
 	 
 	
 <!--HERO-->	
 	
-	<div class="hero reversed darkmode" style="padding-right: 0; width: 95%;">
-		<div class="content-field" style="padding-right: 5%; width: 95%;">
-			<h1>Lekatech</h1>
-			<p>Assignment was to come up with an UI for an electric breaker hammer. The project was done in corporation with industrial design students who designed the hammer itself.</p>
-			<div class="column" style="align-items: flex-start; height: fit-content;">
-				<div class="content-field">
-					<h3>UI team</h3>
-					<p>Miro Eskelinen<br>
-					Karoliina Muukka<br>
-					</p>
-				</div>
-				<div class="content-field">
-					<h3>My role</h3>
-					<p>'Innovative' UI<br>
-					UX &amp; UI Design<br>
-					Wireframing<br>
-					Prototyping<br></p>
-				</div>
-				<div class="content-field">
-					<h3>Tools</h3>
-					<p>Figma</p>
-				</div>
-			</div>
-			<br>
-			<div class="minisection">
-				<a class="button" href="#anchor2">View screens</a>
-				<a class="button secondarybutton" href="uxui.html">Back</a>
-			</div>
-		</div>
+	<div class="hero darkmode" style="background-image: url(Liitteet/Lekatech/Lekatech-mockup-cut.png); background-size: 90vh; background-position: right 100px">
 		<div class="content-field">
-			<img src="Liitteet/Lekatech/Lekatech-mockup-cut.png" alt="Lekatech">
+			<div class="column reversed">
+				<div class="content-field">
+					<h1>Lekatech</h1>
+					<p>Assignment was to come up with an UI for an electric breaker hammer. The project was done in corporation with industrial design students who designed the hammer itself.</p>
+					<div class="column" style="align-items: flex-start; height: fit-content;">
+						<div class="content-field">
+							<h3>UI team</h3>
+							<p>Miro Eskelinen<br>
+							Karoliina Muukka<br>
+							</p>
+						</div>
+						<div class="content-field">
+							<h3>My role</h3>
+							<p>'Innovative' UI<br>
+							UX &amp; UI Design<br>
+							Wireframing<br>
+							Prototyping<br></p>
+						</div>
+						<div class="content-field">
+							<h3>Tools</h3>
+							<p>Figma</p>
+						</div>
+					</div>
+					<br>
+					<div class="minisection">
+						<a class="button" href="#anchor2">View screens</a>
+						<a class="button secondarybutton" href="uxui.html">Back</a>
+					</div>
+				</div>
+				<div class="content-field" style="min-height: 65vh;">
+				</div>
+			</div>
 		</div>
     </div>
 
@@ -174,98 +179,100 @@
 	
 <!-- UI -->	
 	
-	<div class="content-field darkmode" id="anchor2" style="min-height: calc(100vh - 100px)">
-		<div class="column">
-			<div class="content-field" style="width: 50%;">
-				<h3 style="color: var(--lekatech-blue);">Innovative UI</h3>
-				<h2>Opening/operating screen</h2>
-				<p>Since the most crucial function of the UI was the hammering, we decided the operation screen was to be the first thing you saw when opening the device so you could immediately start to work.</p>
+	<div class="hero darkmode">
+		<div class="content-field" id="anchor2">
+			<div class="column">
+				<div class="content-field" style="width: 50%;">
+					<h3 style="color: var(--lekatech-blue);">Innovative UI</h3>
+					<h2>Opening/operating screen</h2>
+					<p>Since the most crucial function of the UI was the hammering, we decided the operation screen was to be the first thing you saw when opening the device so you could immediately start to work.</p>
+				</div>
+				<div class="column">
+					<div class="content-field">
+						<img class="screen" src="Liitteet/Lekatech/Innovative.png" alt="Enhanced">
+					</div>
+					<div class="content-field">
+						<img class="screen" src="Liitteet/Lekatech/Hammering.png" alt="Hammering">
+					</div>
+					<div class="content-field">
+						<img class="screen" src="Liitteet/Lekatech/Error.png" alt="Error">
+					</div>
+				</div>
 			</div>
+		</div>
+		<div class="content-field">
+			<div class="column">
+				<div class="content-field" style="width: 50%;">
+					<h2>Changing program</h2>
+					<p>Having different programs is the key function separating electric breaker hammer from hydraulic hammer (competitor). Programs help hammering different kind of materials with most efficient hammering frequency and impact energy. <b>Programs are divided into modes and cycles.</b> Modes are programs with only one type of frequency and impact energy, and cycles are combination of many modes.</p>
+					<p style="font-size: 12px">Note! Icons used in the modes are placeholders and were to be replaced in further development of the UI.</p>
+				</div>
+				<div class="column">
+					<div class="content-field">
+						<h3>Mode selection</h3>
+						<img class="screen" src="Liitteet/Lekatech/Mode-selection.png" alt="Mode selection">
+					</div>
+					<div class="content-field">
+						<h3>Cycle selection</h3>
+						<img class="screen" src="Liitteet/Lekatech/Cycle-selection.png" alt="Cycle selection">
+					</div>
+					<div class="content-field">
+						<h3>Edit/create cycle pop-up</h3>
+						<img class="screen" src="Liitteet/Lekatech/Edit-cycle-pop-up.png" alt="Edit cycle">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content-field">
+			<div class="column">
+				<div class="content-field" style="width: 50%;">
+					<h2>Operating screen with cycle</h2>
+					<p>Cycles work with one mode being active for selected amount of seconds and then mode changes.</p>
+				</div>
+				<div class="column">
+					<div class="content-field">
+						<img class="screen" src="Liitteet/Lekatech/Cycle.png" alt="Cycle">
+					</div>
+					<div class="content-field">
+						<img class="screen" src="Liitteet/Lekatech/Cycle-hammering.png" alt="Cycle hammering">
+					</div>
+					<div class="content-field">
+						<img class="screen" src="Liitteet/Lekatech/Cycle-hammering2.png" alt="Cycle hammering 2">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content-field">
+			<h2>Other main screens</h2>
 			<div class="column">
 				<div class="content-field">
-					<img class="screen" src="Liitteet/Lekatech/Innovative.png" alt="Enhanced">
+					<h3>Status Details</h3>
+					<img class="screen" src="Liitteet/Lekatech/Status-Details.png" alt="Status Details">
 				</div>
 				<div class="content-field">
-					<img class="screen" src="Liitteet/Lekatech/Hammering.png" alt="Hammering">
+					<h3>Machine data</h3>
+					<img class="screen" src="Liitteet/Lekatech/Machine-data.png" alt="Machine Data">
 				</div>
 				<div class="content-field">
-					<img class="screen" src="Liitteet/Lekatech/Error.png" alt="Error">
+					<h3>Log in</h3>
+					<img class="screen" src="Liitteet/Lekatech/Log-in.png" alt="Log in">
+				</div>
+				<div class="content-field">
+					<h3>Profile</h3>
+					<img class="screen" src="Liitteet/Lekatech/Profile.png" alt="Profile">
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="content-field darkmode" style="min-height: calc(100vh - 100px)">
-		<div class="column">
-			<div class="content-field" style="width: 50%;">
-				<h2>Changing program</h2>
-				<p>Having different programs is the key function separating electric breaker hammer from hydraulic hammer (competitor). Programs help hammering different kind of materials with most efficient hammering frequency and impact energy. <b>Programs are divided into modes and cycles.</b> Modes are programs with only one type of frequency and impact energy, and cycles are combination of many modes.</p>
-				<p style="font-size: 12px">Note! Icons used in the modes are placeholders and were to be replaced in further development of the UI.</p>
-			</div>
+		<div class="content-field">
 			<div class="column">
 				<div class="content-field">
-					<h3>Mode selection</h3>
-					<img class="screen" src="Liitteet/Lekatech/Mode-selection.png" alt="Mode selection">
+					<h2>Physical buttons</h2>
+					<p>Physical buttons were part of the device the UI was made for so we decided to use them as "backup" buttons in case user was using gloves and couldn't touch the touchscreen. We put all the navigation links there plus shortcut to three most commonly used modes.<br><br></p>
+					<img src="Liitteet/Lekatech/Physical-buttons.png" alt="Physival buttons" style="max-width: 400px;">
 				</div>
-				<div class="content-field">
-					<h3>Cycle selection</h3>
-					<img class="screen" src="Liitteet/Lekatech/Cycle-selection.png" alt="Cycle selection">
+				<div class="content-field" style="width: 50%;">
+					<img src="Liitteet/Lekatech/Device-Home.png" alt="Device">
 				</div>
-				<div class="content-field">
-					<h3>Edit/create cycle pop-up</h3>
-					<img class="screen" src="Liitteet/Lekatech/Edit-cycle-pop-up.png" alt="Edit cycle">
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="content-field darkmode" style="min-height: calc(100vh - 100px)">
-		<div class="column">
-			<div class="content-field" style="width: 50%;">
-				<h2>Operating screen with cycle</h2>
-				<p>Cycles work with one mode being active for selected amount of seconds and then mode changes.</p>
-			</div>
-			<div class="column">
-				<div class="content-field">
-					<img class="screen" src="Liitteet/Lekatech/Cycle.png" alt="Cycle">
-				</div>
-				<div class="content-field">
-					<img class="screen" src="Liitteet/Lekatech/Cycle-hammering.png" alt="Cycle hammering">
-				</div>
-				<div class="content-field">
-					<img class="screen" src="Liitteet/Lekatech/Cycle-hammering2.png" alt="Cycle hammering 2">
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="content-field darkmode" style="min-height: calc(100vh - 100px)">
-		<h2>Other main screens</h2>
-		<div class="column">
-			<div class="content-field">
-				<h3>Status Details</h3>
-				<img class="screen" src="Liitteet/Lekatech/Status-Details.png" alt="Status Details">
-			</div>
-			<div class="content-field">
-				<h3>Machine data</h3>
-				<img class="screen" src="Liitteet/Lekatech/Machine-data.png" alt="Machine Data">
-			</div>
-			<div class="content-field">
-				<h3>Log in</h3>
-				<img class="screen" src="Liitteet/Lekatech/Log-in.png" alt="Log in">
-			</div>
-			<div class="content-field">
-				<h3>Profile</h3>
-				<img class="screen" src="Liitteet/Lekatech/Profile.png" alt="Profile">
-			</div>
-		</div>
-	</div>
-	<div class="content-field darkmode" style="min-height: calc(100vh - 100px)">
-		<div class="column">
-			<div class="content-field">
-				<h2>Physical buttons</h2>
-				<p>Physical buttons were part of the device the UI was made for so we decided to use them as "backup" buttons in case user was using gloves and couldn't touch the touchscreen. We put all the navigation links there plus shortcut to three most commonly used modes.<br><br></p>
-				<img src="Liitteet/Lekatech/Physical-buttons.png" alt="Physival buttons" style="max-width: 400px;">
-			</div>
-			<div class="content-field" style="width: 50%;">
-				<img src="Liitteet/Lekatech/Device-Home.png" alt="Device" style="max-height: 65vh;">
 			</div>
 		</div>
 	</div>
@@ -274,18 +281,20 @@
 
 <!--FOOTER-->
 	
-	<div class="footer">
-		<div class="footersection">
-			<div class="minisection">
-				<i class="material-symbols-outlined md-regular">phone</i>&nbsp;+358 50 518 2107
+	<footer>
+		<div class="navbar">
+			<div class="footersection">
+				<div class="minisection">
+					<i class="material-symbols-outlined md-regular">phone</i>&nbsp;+358 50 518 2107
+				</div>
+				<div class="minisection">
+					<i class="material-symbols-outlined md-regular">mail</i>&nbsp;miro.eskelinen@gmail.com
+				</div>
+				<a href="https://linkedin.com/in/miro-e-6664b3171" target="_blank" class="fa fa-linkedin"></a>
 			</div>
-			<div class="minisection">
-				<i class="material-symbols-outlined md-regular">mail</i>&nbsp;miro.eskelinen@gmail.com
-			</div>
-			<a href="https://linkedin.com/in/miro-e-6664b3171" target="_blank" class="fa fa-linkedin"></a>
+			<div class="minisection" style="font-size: 10px;"><span>&#169;</span> Miro Eskelinen | Build with HTML, CSS &amp; a teaspoon of Javascript</div>
 		</div>
-		<div class="minisection" style="font-size: 10px;"><span>&#169;</span> Miro Eskelinen | Build with HTML, CSS &amp; a teaspoon of Javascript</div>
-	</div>
+	</footer>
 
 	
 </body>
