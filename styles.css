@@ -147,7 +147,7 @@ html, body {
 		color: white;
 		align-items: center;
 		border-radius: 5px;
-		margin: 0 0 20px 0;
+		margin: 0 0 35px 0;
 		font-weight: 600;
 	}
 
@@ -188,7 +188,7 @@ html, body {
 		}
 
 		.minisection:has(.button) {
-			margin: 0 0 20px 0;
+			margin: 0 0 35px 0;
 			gap: 20px;
 		}
 
