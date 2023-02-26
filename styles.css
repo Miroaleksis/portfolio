@@ -44,6 +44,8 @@ html, body {
 		
 		--cloubi-background: #00AAB5;
 		--cloubi-orange: #FA9A36;
+		
+		--finnishdesigners-background: #61E487;
 	}
 
 
@@ -135,6 +137,7 @@ html, body {
 		max-width: 100%;
 		object-fit: cover;
 		width: fit-content;
+		overflow: visible;
 	}
 
 	.button {
@@ -399,12 +402,13 @@ header[active] {
 	aspect-ratio: 1/1;
 	border-radius: 100%;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: center;
 	overflow: hidden;
 	margin: 0 0 20px 0;
-	background-position: left; /* kuvan sijainti taustalla */
-	background-size: cover;
-	max-width: fit-content;
+	background-position: right; /* kuvan sijainti taustalla */
+	background-size: contain;
+	max-width: 100%;
+	background-repeat: no-repeat;
 }
 
 .picture {
@@ -424,7 +428,6 @@ header[active] {
 	width: 90%;
 	padding: 50px 5% 25px 5%;
 	background-position: center; /* kuvan sijainti taustalla */
-	background-attachment: none; /* pysyykö paikallaan vai ei */
 	background-size: cover;
 	background-repeat: no-repeat;
 	scroll-margin-top: 50px;
@@ -461,12 +464,12 @@ header[active] {
 	border-radius: 10px;
 	margin: 10px 0 20px 0;
 	gap: 0 5%;
-	overflow: hidden;
 	transition: 0.2s ease-in-out;
 }
 
 .card:hover {
 	margin-top: 0px;
+	margin-bottom: 30px;
 }
 
 .screen {
