@@ -325,9 +325,7 @@ header[active] {
 
 .pictureframe {
 	display: flex;
-	background-size: contain;
-	background-position: top center;
-	background-repeat: no-repeat;
+	justify-content: center;
 	border-radius: 100%;
 	overflow: hidden;
 	margin: 0 0 20px 0;
@@ -552,7 +550,7 @@ footer .navbar {
 	}
 	
 .content-field {
-	text-align: -webkit-left !important;
+	align-items: flex-start !important;
 	width: 90% !important;
 }
 	
