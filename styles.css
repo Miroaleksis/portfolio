@@ -245,68 +245,6 @@ header[active] {
 		}
 
 
-		/* Alavalikko */
-
-		.dropdown {
-  			display: inline-block;
-			position: relative;
-			height: 100%;
-		}
-
-			.submenu {
-  				display: none;
-  				position: absolute; /* Kun absolute niin päämenun button ei veny */
-				min-width: 100%;
-				transition: 0.2s ease-in-out;
-				color: white;
-			}
-
-				.dropdown .submenu .menubutton{
-					background-color: var(--primary);
-				}
-
-			.dropdown:hover .menubutton {
-				background-color: var(--primary);
-				color: white;
-			}
-
-
-		/* Mobiilialavalikko*/
-
-		.plus-container {
-			display: flex;
-			width: fit-content;
-			height: fit-content;
-			justify-content: center;
-			align-items: center;
-		}
-
-			.plus,
-			.plus::before{
-				display:block;
-				width: 12px;
-				height: 2px;
-				background-color: var(--primary);
-				border-radius: 2px;
-			}
-
-				.darkmode .plus,
-				.darkmode .plus::before{
-					background-color: white;
-				}
-
-			.plus::before{
-				content: '';
-				transform: rotate(90deg);
-				transition: transform ease-in-out 0.15s;
-			}
-
-			.menubutton[active] .plus,
-			.menubutton[active] .plus::before{
-				background-color: white;
-			}
-
-
 	/* Hampparipainikkeen visu ja animaatio */
 
 	#menu-toggle {
@@ -469,6 +407,7 @@ img {
 	overflow: hidden;
 	box-shadow: 25px 25px 50px rgba(0, 0, 0, 0.25);
 	max-height: 65vh;
+	width: fit-content;
 }
 
 .gallery {
@@ -487,6 +426,7 @@ img {
 		aspect-ratio: 1/1;
 		border-radius: 5px;
 		margin: 10px 0 10px;
+		object-fit: cover;
 		overflow: hidden;
 		justify-content: center;
 		align-items: center;
@@ -556,56 +496,6 @@ footer {
 			margin-bottom: 2px;
 			cursor: pointer;
 		}
-
-	
-		/* Alasvetovalikko */
-
-		.dropdown{
-			width:100%;
-		}
-	
-			.menubutton[active] + .submenu{
-				display: flex !important;
-				position: relative; /* Hyvin oleellinen */
-				flex-direction: column;
-				width:100%;
-			}
-	
-				.dropdown .submenu .menubutton {
-					width: calc(100% - 30px);
-					padding-left: 30px;
-				}
-	
-					.dropdown .submenu .dropdown .submenu .menubutton {
-						width: calc(100% - 60px);
-						padding-left: 60px;
-					}
-		
-				.plus-container{
-					width: 50px;
-					height: 100%;
-					cursor: pointer;
-				}
-	
-				.menu a .plus-container {
-					border: 2px;
-					border-left-style: solid;
-					border-color: var(--primary);
-					background-color: var(--primary);
-				}
-	
-				.menubutton:has(.plus-container:hover),
-				.submenu .plus-container,
-				.plus-container:hover,
-				.menubutton[active],
-				.menubutton[active] .plus-container,
-				.menubutton[active]:has(.plus-container:hover) {
-					background-color: var(--primary)!important;
-				}
-
-					.menubutton[active] .plus-container .plus::before{
-						transform: rotate(180deg);
-					}
 	
 
 	/* Mobiilimenun asetukset */
@@ -642,52 +532,6 @@ footer .navbar {
 	}
 	
 }
-
-
-
-@media (min-width: 850px){
-	
-	/*Alavalikko */
-	
-	.dropdown:hover .submenu {
-		display: flex;
-		flex-direction: column;
-	}
-		
-		.dropdown:hover .plus,
-		.dropdown:hover .plus::before{
-			background-color: white;
-		}
-		
-		.dropdown:hover .plus::before{
-			transform: rotate(180deg);
-		}
-	
-	
-		/* Alavalikon alavalikko */
-
-		.dropdown:hover .submenu .dropdown .submenu { /* Ettei kaikki submenut avaudu */
-			display:none;
-		}
-
-		.dropdown .submenu .dropdown:hover .submenu{
-			display: flex !important;
-			flex-direction: column;
-			position: absolute;
-			Top: 0;
-			Left: 100%;
-		}
-	
-			.dropdown:hover .submenu .dropdown .menubutton .plus::before{ /* Ettei jokainen + käänny */
-				transform: rotate(90deg)
-			}
-
-			.dropdown .submenu .dropdown:hover .menubutton .plus::before{
-				transform: rotate(180deg);
-			}
-	
-}
-
 
 
 
