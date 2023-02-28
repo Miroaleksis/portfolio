@@ -170,7 +170,7 @@ html, body {
 		max-width: 100%;
 		width: fit-content;
 		height: fit-content;
-		gap: 5px;
+		gap: 5px 5px;
 		align-items: center;
 		justify-content: center;
 	}
@@ -181,7 +181,7 @@ html, body {
 
 		.minisection:has(.button) {
 			margin: 0 0 35px 0;
-			gap: 20px;
+			gap: 20px 20px;
 		}
 
 
@@ -325,13 +325,14 @@ header[active] {
 
 .pictureframe {
 	display: flex;
-	aspect-ratio: 1/1;
 	border-radius: 100%;
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
 	margin: 0 0 20px 0;
 	max-width: 100%;
+	height: auto;
+	aspect-ratio: 1/1;
 }
 
 .picture {
@@ -459,7 +460,6 @@ footer {
 		display: flex;
 		gap: 5px 20px;
 		align-items: flex-start;
-		flex-direction: row;
 	}
 
 
