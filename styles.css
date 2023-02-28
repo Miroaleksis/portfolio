@@ -342,6 +342,8 @@ header[active] {
 /* BODY */
 
 .content-field {
+	display: flex;
+	flex-direction: column;
 	width: 90%;
 	padding: 50px 5% 25px 5%;
 	background-position: center; /* kuvan sijainti taustalla */
