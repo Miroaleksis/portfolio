@@ -330,7 +330,8 @@ header[active] {
 	overflow: hidden;
 	margin: 0 0 20px 0;
 	aspect-ratio: 1/ 1;
-	width: 100%;
+	width: 200px;
+	height: 200px;
 }
 
 
@@ -554,6 +555,11 @@ footer .navbar {
 	
 .hero {
 	background-size: contain !important;
+}
+	
+.pictureframe {
+	width: 250px !important;
+	height: 250px !important;
 }
 	
 }
