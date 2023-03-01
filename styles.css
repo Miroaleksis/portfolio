@@ -331,7 +331,7 @@ header[active] {
 	overflow: hidden;
 	margin: 0 0 20px 0;
 	aspect-ratio: 1/ 1;
-	max-width: 100%;
+	width: 100%;
 }
 
 
@@ -558,7 +558,7 @@ footer .navbar {
 }
 	
 .pictureframe {
-	max-width: 75%;
+	width: 75%;
 }
 	
 }
