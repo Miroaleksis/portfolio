@@ -131,8 +131,7 @@ html, body {
 
 	.button {
 		display: flex;
-		padding: 0px 30px;
-		height: 40px;
+		padding: 10px 30px;
 		width: fit-content;
 		background-color: var(--primary);
 		justify-content: center;
@@ -140,7 +139,8 @@ html, body {
 		align-items: center;
 		border-radius: 5px;
 		margin: 0 0 35px 0;
-		font-weight: 600;
+		font-weight: 500;
+		box-sizing: border-box;
 	}
 
 	.button:hover {
@@ -157,13 +157,22 @@ html, body {
 			background: none;
 			color: var(--primary);
 			border: 2px solid;
-    		box-sizing: border-box;
 		}
 
 			.darkmode .secondarybutton {
 				color: white;
 				background: none;
 			}
+
+	.buttonsection {
+		display: flex;
+		margin: 0 0 35px 0;
+		gap: 20px;
+	}
+
+		.buttonsection .button {
+			margin: 0 0 0 0;
+		}
 
 	.minisection {
 		display: flex;
@@ -174,15 +183,6 @@ html, body {
 		align-items: center;
 		justify-content: center;
 	}
-
-		.minisection .button {
-			margin: 0 0 0 0;
-		}
-
-		.minisection:has(.button) {
-			margin: 0 0 35px 0;
-			gap: 20px;
-		}
 
 
 
@@ -542,10 +542,9 @@ footer .navbar {
 		flex-direction: column-reverse;
 	}
 	
-	.minisection:has(.button){
-		flex-direction: column;
-		align-items: flex-start;
-	}
+.buttonsection{
+	flex-direction: column;
+}
 	
 .content-field {
 	align-items: flex-start !important;
