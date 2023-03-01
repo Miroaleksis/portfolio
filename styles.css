@@ -318,7 +318,6 @@ header[active] {
 	flex-direction: column;
 	align-items: center;
 	background-position: center; /* kuvan sijainti taustalla */
-	background-attachment: inherit; /* pysyykö paikallaan vai ei */
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -551,10 +550,6 @@ footer .navbar {
 .content-field {
 	align-items: flex-start !important;
 	width: 90% !important;
-}
-	
-.hero {
-	background-size: contain !important;
 }
 	
 .pictureframe {
