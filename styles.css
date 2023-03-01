@@ -370,7 +370,7 @@ header[active] {
 	width: 100%;
 	flex-direction: row;
 	justify-content: center;
-	gap: 0 25px;
+	gap: 0 35px;
 }
 
 .card {
