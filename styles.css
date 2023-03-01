@@ -325,13 +325,13 @@ header[active] {
 
 .pictureframe {
 	display: flex;
+	align-items: center;
 	justify-content: center;
 	border-radius: 100%;
 	overflow: hidden;
 	margin: 0 0 20px 0;
 	aspect-ratio: 1/ 1;
-	width: 200px;
-	height: 200px;
+	max-width: 100%;
 }
 
 
@@ -558,8 +558,7 @@ footer .navbar {
 }
 	
 .pictureframe {
-	width: 250px !important;
-	height: 250px !important;
+	max-width: 75%;
 }
 	
 }
