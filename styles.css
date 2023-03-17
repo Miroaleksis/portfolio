@@ -390,7 +390,7 @@ header[active] {
 .card {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	width: calc(100% - 50px);
 	border-radius: 10px;
 	margin: 10px 0 20px 0;
 	padding: 25px;
