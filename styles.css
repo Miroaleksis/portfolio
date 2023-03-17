@@ -29,7 +29,8 @@ html, body {
 	/* Värit */
 
 	:root {
-		--primary: #044d4d;
+		--primary: #033333;
+		--primary-light: #044d4d;
 		--secondary: #d9b100;
 		--text: #262626;
 		--white-light: rgba(255, 255, 255, 0.7);
@@ -253,7 +254,9 @@ header[active] {
 		}
 
 		.current {
-			color: var(--secondary)!important;
+			text-decoration: underline;
+			text-underline-offset: 17px;
+			text-decoration-thickness: 2px;
 		}
 
 
@@ -389,13 +392,13 @@ header[active] {
 
 .card {
 	display: flex;
-	flex-direction: column;
 	width: calc(100% - 50px);
 	border-radius: 10px;
 	margin: 10px 0 30px 0;
 	padding: 25px;
 	gap: 0 5%;
 	transition: 0.2s ease-in-out;
+	/* box-shadow: 2px 2px 10px 0px rgba(0, 0, 255, 0.2); */
 }
 
 .card:hover {
