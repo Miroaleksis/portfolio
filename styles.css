@@ -33,11 +33,9 @@ html, body {
 		--secondary: #d9b100;
 		--text: #262626;
 		--white-light: rgba(255, 255, 255, 0.7);
+		--white-superlight: rgba(255, 255, 255, 0.15);
 		
-		--vuorox-primary: #023047;
-		--vuorox-secondary: #085B82;
-		--vuorox-background: #E2E9ED;
-		--vuorox-tertiary: #64aade;
+		--vuorox-background: #085B82;
 		
 		--lekatech-background: #495666;
 		--lekatech-blue: #32B3FF;
@@ -45,7 +43,8 @@ html, body {
 		--cloubi-background: #00AAB5;
 		--cloubi-orange: #FA9A36;
 		
-		--finnishdesigners-background: #61E487;
+		--finnishdesigners-background: #007672;
+		--finnishdesigners-green: #61E487;
 	}
 
 
@@ -78,7 +77,8 @@ html, body {
 		}
 
 	h2 {
-		font-weight: bold;
+		font-weight: 400;
+		font-family: 'DM Serif Text', serif;
 		font-size: 30px;
 		margin: 0 0 25px 0;
 	}
@@ -95,13 +95,18 @@ html, body {
 		line-height: 1.6;
 	}
 
+		.darkmode p {
+			color: var(--white-light)
+		}
+
 	a { /* Linkit */
 		font-weight: 500;
 		color: inherit;
 		text-decoration-line: none;
 	}
 
-	a:hover {
+	a:hover,
+	a:hover p {
 		color: var(--secondary) !important;
 	}
 
@@ -120,6 +125,13 @@ html, body {
 
 	
 	/* Yleiset elementit */
+
+	img {
+		max-width: 100%;
+		max-height: 100%;
+		object-fit: contain;
+		height: auto;
+	}
 
 	.darkmode {
 		color: white !important;
@@ -324,6 +336,7 @@ header[active] {
 
 .pictureframe {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	border-radius: 100%;
@@ -376,9 +389,11 @@ header[active] {
 
 .card {
 	display: flex;
+	flex-direction: column;
 	width: 100%;
 	border-radius: 10px;
 	margin: 10px 0 20px 0;
+	padding: 25px;
 	gap: 0 5%;
 	transition: 0.2s ease-in-out;
 }
@@ -386,13 +401,6 @@ header[active] {
 .card:hover {
 	margin-top: 0px;
 	margin-bottom: 30px;
-}
-
-img {
-	max-width: 100%;
-	max-height: 100%;
-	object-fit: contain;
-	height: auto;
 }
 
 .screen {
