@@ -451,8 +451,8 @@ header[active] {
 
 	.galleryimage {
 		display: flex;
-		width: 200px;
-		height: 200px;
+		width: 175px;
+		height: 175px;
 		border-radius: 100%;
 		margin: 10px 0 10px;
 		object-fit: cover;
