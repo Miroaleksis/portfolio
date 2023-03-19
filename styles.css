@@ -425,9 +425,14 @@ header[active] {
 }
 
 	.card .content-field {
-		width: calc(100% - 40px) !important;
+		width: calc(100% - 50px) !important;
 		border-radius: 10px 10px 0 0;
 		padding: 10px 25px 0 25px;
+	}
+
+	.card .content-field:first-of-type {
+		align-items: center !important;
+		justify-content: center;
 	}
 
 .screen {
