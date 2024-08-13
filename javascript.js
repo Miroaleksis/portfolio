@@ -25,7 +25,7 @@ class MyHeader extends HTMLElement {
 				<a class="logo-container" href="index.html">Miro Eskelinen</a>
 				<input id="menu-toggle" type="checkbox"/>
 				<label class="hamburger-container" for="menu-toggle">
-					<div class="hamburger" aria-label="Menu"></div>
+					<div class="hamburger" aria-label="Menu" role="button"></div>
 				</label>
 				<div class="menu">
 					<a class="menubutton" href="index.html#worksamples">Work&nbsp;samples</a>
