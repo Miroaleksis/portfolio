@@ -1,0 +1,412 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap'); /* FONTTI */
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200'); /* IKONIT */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css); /* SOMEIKONIT */
+
+
+
+html, body {
+	font-family: 'Inter', sans-serif;
+	font-size: 16px;
+	color: var(--primary);
+	background-color: var(--secondary);
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	scroll-behavior: smooth;
+}
+
+	body .navbar,
+	body .content-field,
+	hr {
+		max-width: calc(1000px - 10%);
+	}
+
+
+/* YLEISET */
+
+	/* Värit */
+
+	:root {
+		--primary: #033333;
+		--secondary: #F2F3F3;
+		--tertiary: #d9b100;
+	}
+
+
+	/* Ikonit */
+
+	.material-symbols-outlined {
+	  font-variation-settings:
+	  'FILL' 1,
+	  'wght' 400,
+	  'GRAD' 0,
+	  'opsz' 48
+	}
+
+	.material-symbols-outlined.md-regular { font-size: 16px; }
+	.material-symbols-outlined.md-huge { font-size: 36px; }
+
+
+	/* Fontit */
+
+	h1 {
+		font-family: 'DM Serif Text', serif;
+		font-weight: 400;
+		font-size: 3em;
+		margin: 0 0 8px 0;
+		line-height: 1;
+		text-align: center;
+	}
+
+	h2 {
+		font-weight: 400;
+		font-family: 'DM Serif Text', serif;
+		font-size: 2.5em;
+		margin: 0 0 8px 0;
+		line-height: 1;
+		text-align: center;
+	}
+
+	h3 {
+		font-weight: 700;
+		font-size: 1.3em;
+		margin: 0 0 -14px 0;
+		line-height: 1;
+	}
+
+	p {
+		font-weight: normal;
+		margin: 0;
+		line-height: 1.6;
+	}
+
+	a {
+		color: inherit;
+		text-decoration-line: none;
+	}
+
+	
+	/* Someikonit */
+
+	.fa {
+  		text-align: center;
+		border-radius: 0 !important;
+	}
+
+
+
+/* NAVIGAATIOPALKKI */
+
+header {
+	position: fixed;
+	width: 100%;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+ 	justify-content: center;
+  	height: fit-content;
+	transition: 0.2s ease-in-out;
+	z-index: 10;
+}
+
+header[active] {
+	color: var(--secondary);
+	background-color: var(--primary);
+}
+
+.navbar{
+	display: flex;
+	width: inherit;
+	padding: 0 5%;
+	justify-content: space-between;
+	gap: 40px 0;
+}
+
+	.logo-container{
+		font-family: 'DM Serif Text', serif;
+		display: flex;
+		height: 50px;
+		padding: 0;
+		align-items: center;
+		font-size: 22px;
+	}
+
+	.menu {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		height: 100%;
+		gap: 0 32px;
+	}
+
+		.menubutton {
+			display: flex;
+			height: 50px;
+			gap: 8px;
+			align-items: center;
+			font-weight: 500;
+			box-sizing: border-box;
+		}
+
+		.menu a:hover {
+			border-bottom: 1.5px solid;
+		}
+
+
+	/* Hampparipainikkeen visu ja animaatio */
+
+	#menu-toggle {
+		display: none;
+	}
+
+	#menu-toggle:checked + .hamburger-container {
+		color: var(--secondary);
+	}
+
+	#menu-toggle:checked + .hamburger-container .hamburger::before {
+		margin-top: 0px;
+		transform: rotate(405deg);
+	}
+
+	#menu-toggle:checked + .hamburger-container .hamburger {
+		background: transparent;
+	}
+
+	#menu-toggle:checked + .hamburger-container .hamburger::after {
+		margin-top: 0px;
+		transform: rotate(-405deg);
+	}
+
+	.hamburger-container {
+	  	display: none;
+	  	height: 50px;
+	  	width: 25px;
+	  	cursor: pointer;
+	  	justify-content: center;
+	  	align-items: center;
+	}
+
+		.hamburger,
+		.hamburger::before,
+		.hamburger::after {
+			background-color: currentColor;
+			position: absolute;
+			height: 2px;
+			width: 25px;
+			transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+			border-radius: 2px;
+		}
+
+		.hamburger::before {
+			content: '';
+			margin-top: -8px;
+		}
+
+		.hamburger::after {
+			content: '';
+			margin-top: 8px;
+		}
+
+
+
+/* MAIN */
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 80px 0;
+}
+
+	.content-field {
+		display: flex;
+		flex-direction: column;
+		padding: 64px 5%;
+		scroll-margin-top: 48px;
+		gap: 32px 0;
+	}
+
+		.content-field .content-field,
+		footer .content-field {
+			width: 100%;
+			padding: 0;
+		}
+
+		.content-field ul {
+			margin: 0;
+			line-height: 1.6;
+			padding-inline-start: 1em;
+		}
+
+	.column {
+		display: flex;
+		flex-direction: row;
+		gap: 24px 40px;
+	}
+
+	.card {
+		transition: 0.2s ease-in-out;
+		/* box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.15); */
+		overflow: hidden;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+		.card:hover {
+			width: 120%;
+		}
+
+	.pictureframe {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		overflow: hidden;
+		max-width: 100%;
+		width: 248px;
+		aspect-ratio: 1/ 1;
+		border-radius: 100%;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	hr {
+		margin: 0;
+	}
+
+	.button, .secondarybutton:hover {
+		width: fit-content;
+		padding: 10px 32px;
+		border-radius: 4px;
+		background-color: var(--primary);
+		color: var(--secondary);
+		outline: none;
+	}
+
+	.secondarybutton, .button:hover {
+		width: fit-content;
+		padding: 10px 32px;
+		border-radius: 4px;
+		background: none;
+		color: var(--primary);
+		outline: 1.5px solid;
+		outline-offset: -1.5px;
+	}
+
+	.sample:hover {
+		width: 200%;
+		transition: 0.1s ease-in-out;
+	}
+
+	.info {
+		width: fit-content !important;
+	}
+
+
+
+/* FOOTER */
+
+my-footer {
+	margin-top: auto;
+}
+
+footer {
+	margin-top: auto; /* Oleellinen footerin sijainnin kannalta jos sivulla ei sisältöä */
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+	color: var(--secondary);
+	background-color: var(--primary);
+	width: 100%;
+}
+
+	.footersection {
+		display:  flex;
+		flex-direction: column;
+		gap: 5px 30px;
+	}
+
+		.minisection {
+			display: flex;
+			max-width: 100%;
+			width: fit-content;
+			height: fit-content;
+			gap: 2px;
+			align-items: center;
+			justify-content: center;
+		}
+
+
+
+
+
+
+/* RESPONSIIVISUUS */
+
+@media only screen and (max-width: 700px) {
+
+	/* Navigaatio */
+
+	.menu {
+		position: fixed;
+		top: 0;
+		right: 0; /* Tulee olla 0, right/left vaikuttaa animaatioon */
+		flex-direction: column;
+		width: 0;
+		height: 100%;
+		align-items: flex-start;
+		background-color: var(--primary);
+		color: var(--secondary);
+		transition: width 400ms ease-in-out;
+	}
+
+		.menubutton {
+			display: none; /* Animaation kannalta relevantti */
+			justify-content: space-between;
+			width: 100%;
+			margin-bottom: 2px;
+			cursor: pointer;
+		}
+	
+
+	/* Mobiilimenun asetukset */
+
+	.hamburger-container {
+		display: flex;
+		z-index: 10;
+	}
+
+	#menu-toggle:checked ~ .menu { /* Kun menu on auki */
+		display: flex;
+		justify-content: flex-start;
+		height: 100%;
+		width: 90%;
+		padding: 50px 5% 0 5%;
+	}
+	
+	#menu-toggle:checked ~ .menu .menubutton { /* Kun menu on auki, animaatiossa tärkeä */
+		display: flex;
+	}
+
+	
+	/* Body */
+
+	.column,
+	footer .navbar {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+		.reversed {
+			flex-direction: column-reverse;
+		}
+
+	.content-field {
+		align-items: flex-start !important;
+		width: 90% !important;
+	}
+	
+}
