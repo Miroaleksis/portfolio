@@ -235,7 +235,7 @@ main {
 	.column {
 		display: flex;
 		flex-direction: row;
-		gap: 24px 32px;
+		gap: 24px 40px;
 	}
 
 	.card {
