@@ -242,7 +242,6 @@ main {
 
 	.card {
 		transition: 0.2s ease-in-out;
-		/* box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.15); */
 		justify-content: space-between;
 		align-items: center;
 	}
@@ -253,7 +252,7 @@ main {
 
 		.card img,
 		.sample img {
-			-webkit-filter: drop-shadow(16px 16px 32px rgba(0,0,0,0.15))
+			-webkit-filter: drop-shadow(16px 16px 16px rgba(0,0,0,0.15))
 		}
 
 	.pictureframe {
