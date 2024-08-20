@@ -237,7 +237,7 @@ main {
 	.column {
 		display: flex;
 		flex-direction: row;
-		gap: 24px 40px;
+		gap: 24px 32px;
 	}
 
 	.card {
@@ -276,7 +276,7 @@ main {
 
 	.button, .secondarybutton:hover {
 		width: fit-content;
-		padding: 10px 32px;
+		padding: 10px 24px;
 		border-radius: 4px;
 		background-color: var(--primary);
 		color: var(--secondary);
@@ -285,7 +285,7 @@ main {
 
 	.secondarybutton, .button:hover {
 		width: fit-content;
-		padding: 10px 32px;
+		padding: 10px 24px;
 		border-radius: 4px;
 		background: none;
 		color: var(--primary);
