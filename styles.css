@@ -127,8 +127,6 @@ header[active] {
 	.logo-container{
 		font-family: 'DM Serif Text', serif;
 		display: flex;
-		height: 50px;
-		padding: 0;
 		align-items: center;
 		font-size: 22px;
 	}
@@ -143,7 +141,7 @@ header[active] {
 
 		.menubutton {
 			display: flex;
-			height: 50px;
+			height: 48px;
 			gap: 8px;
 			align-items: center;
 			font-weight: 500;
@@ -314,7 +312,7 @@ footer {
 	margin-top: auto; /* Oleellinen footerin sijainnin kannalta jos sivulla ei sisältöä */
 	display: flex;
 	justify-content: center;
-	padding: 20px 0;
+	padding: 24px 0;
 	color: var(--secondary);
 	background-color: var(--primary);
 	width: 100%;
