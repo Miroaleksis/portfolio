@@ -258,6 +258,10 @@ main {
 			width: 120%;
 		}
 
+		.card img {
+			-webkit-filter: drop-shadow(16px 16px 32px rgba(0,0,0,0.15))
+		}
+
 	.pictureframe {
 		display: flex;
 		align-items: flex-start;
@@ -297,7 +301,7 @@ main {
 	}
 
 	.sample:hover {
-		width: 200%;
+		width: 150%;
 		transition: 0.1s ease-in-out;
 	}
 
