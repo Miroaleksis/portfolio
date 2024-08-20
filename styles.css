@@ -116,7 +116,7 @@ header[active] {
 	background-color: var(--primary);
 }
 
-.navbar{
+.navbar {
 	display: flex;
 	width: inherit;
 	padding: 0 5%;
@@ -124,7 +124,7 @@ header[active] {
 	gap: 40px 0;
 }
 
-	.logo-container{
+	.logo-container {
 		font-family: 'DM Serif Text', serif;
 		display: flex;
 		align-items: center;
