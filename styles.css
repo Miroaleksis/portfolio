@@ -300,6 +300,11 @@ main {
 		width: fit-content !important;
 	}
 
+	.badge {
+		width: 104px;
+		height: 104px;
+	}
+
 
 
 /* FOOTER */
