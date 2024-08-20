@@ -276,21 +276,23 @@ main {
 
 	.button, .secondarybutton:hover {
 		width: fit-content;
-		padding: 10px 24px;
+		padding: 10px 20px;
 		border-radius: 4px;
 		background-color: var(--primary);
 		color: var(--secondary);
 		outline: none;
+		white-space: nowrap;
 	}
 
 	.secondarybutton, .button:hover {
 		width: fit-content;
-		padding: 10px 24px;
+		padding: 10px 20px;
 		border-radius: 4px;
 		background: none;
 		color: var(--primary);
 		outline: 1.5px solid;
 		outline-offset: -1.5px;
+		white-space: nowrap;
 	}
 
 	.sample:hover {
