@@ -259,7 +259,7 @@ main {
 		justify-content: center;
 		overflow: hidden;
 		max-width: 100%;
-		width: 248px;
+		width: 184px;
 		aspect-ratio: 1/ 1;
 		border-radius: 100%;
 	}
@@ -301,8 +301,8 @@ main {
 	}
 
 	.badge {
-		width: 104px;
-		height: 104px;
+		width: 80px;
+		height: 80px;
 	}
 
 	.tag {
