@@ -305,6 +305,23 @@ main {
 		height: 104px;
 	}
 
+	.tag {
+		width: fit-content;
+		padding: 8px 16px;
+		border-radius: 80px;
+		color: var(--primary);
+		outline: 1.5px solid;
+		outline-offset: -1.5px;
+		white-space: nowrap;
+		font-size: 0.8em;
+	}
+
+	.tagsection {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+	}
+
 
 
 /* FOOTER */
