@@ -348,12 +348,8 @@ footer {
 
 		.minisection {
 			display: flex;
-			max-width: 100%;
 			width: fit-content;
-			height: fit-content;
 			gap: 2px;
-			align-items: center;
-			justify-content: center;
 		}
 
 
