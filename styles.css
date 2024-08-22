@@ -54,7 +54,7 @@ html, body {
 	h1 {
 		font-family: 'DM Serif Text', serif;
 		font-weight: 400;
-		font-size: 3em;
+		font-size: 3.2em;
 		margin: 0 0 8px 0;
 		line-height: 1;
 		text-align: center;
@@ -226,8 +226,7 @@ main {
 		gap: 32px 0;
 	}
 
-		.content-field .content-field,
-		footer .content-field {
+		.content-field .content-field {
 			width: 100%;
 			padding: 0;
 		}
@@ -256,7 +255,6 @@ main {
 	.pictureframe {
 		overflow: hidden;
 		max-width: 100%;
-		width: 200px;
 		aspect-ratio: 1/ 1;
 		border-radius: 100%;
 	}
@@ -324,11 +322,10 @@ main {
 /* FOOTER */
 
 my-footer {
-	margin-top: auto;
+	margin-top: auto; /* Oleellinen footerin sijainnin kannalta jos sivulla ei sisältöä */
 }
 
 footer {
-	margin-top: auto; /* Oleellinen footerin sijainnin kannalta jos sivulla ei sisältöä */
 	display: flex;
 	justify-content: center;
 	padding: 24px 0;
