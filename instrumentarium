@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	
+<head>
+	<meta charset="UTF-8">
+	<title>Instrumentarium</title>
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/x-icon" href="#"> <!--FAVICON-->
+	<script src="javascript.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	
+	
+	
+
+<body>
+	
+<!--NAVIGAATIO-->
+	
+	<my-header></my-header>
+
+	 
+	
+<!--MAIN-->	
+	
+	<main>
+		
+		<div class="content-field">
+			<h1>Instrumentarium</h1>
+			<div class="tagsection headertags">
+				<div class="tag">Desktop&nbsp;publishing</div>
+			</div>
+			<div class="column">
+				<div class="content-field">
+					<p>Instrumentarium was one of the clients for whom I did commissioned work while I worked in an advertising agency. These included such things as flyers and coupons. The designs were made with strict brand guidelines in mind.</p>
+				</div>
+				<hr>
+				<div class="content-field" style="width: 33%;">
+					<h3>Tools</h3>
+					<p>Adobe Indesign<br>
+					Adobe Illustrator</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="content-field">
+			<div class="column">
+				<div class="content-field sample">
+					<img src="Liitteet/Instrumentarium/Flyer.png" alt="Flyer">
+				</div>
+				<div class="content-field sample">
+					<img src="Liitteet/Instrumentarium/Coupon.png" alt="Coupons">
+				</div>
+			</div>
+		</div>
+		
+	</main>
+	
+	
+
+<!--FOOTER-->
+	
+	<my-footer></my-footer>
+	
+
+	
+</body>
+	
+</html>
