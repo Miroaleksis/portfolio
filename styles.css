@@ -311,16 +311,16 @@ main {
 		font-size: 0.8em;
 	}
 
-	.headertag {
-		justify-content: center;
-		margin-top: -16px;
-		margin-bottom: 16px;
-	}
-
 	.tagsection {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 8px;
+	}
+
+	.headertags {
+		justify-content: center;
+		margin-top: -16px;
+		margin-bottom: 16px;
 	}
 
 
