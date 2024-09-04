@@ -243,7 +243,9 @@ main {
 		align-items: center;
 	}
 
-		.card:hover {
+		.card:hover,
+		.sample:hover {
+			transition: 0.1s ease-in-out;
 			width: 120%;
 		}
 
@@ -284,11 +286,6 @@ main {
 		outline: 1.5px solid;
 		outline-offset: -1.5px;
 		white-space: nowrap;
-	}
-
-	.sample:hover {
-		width: 150%;
-		transition: 0.1s ease-in-out;
 	}
 
 	.info {
