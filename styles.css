@@ -257,7 +257,6 @@ main {
 	.pictureframe {
 		overflow: hidden;
 		align-self: center;
-		width: 200px;
 		max-width: 100%;
 		aspect-ratio: 1/ 1;
 		border-radius: 100%;
