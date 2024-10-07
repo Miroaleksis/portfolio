@@ -28,8 +28,8 @@ class MyHeader extends HTMLElement {
 					<div class="hamburger" aria-label="Menu" role="button"></div>
 				</label>
 				<div class="menu">
-    					<a class="menubutton" href="index.html#aboutme">About&nbsp;me</a>
 					<a class="menubutton" href="index.html#worksamples">Work&nbsp;samples</a>
+    					<a class="menubutton" href="index.html#aboutme">About&nbsp;me</a>
 					<a class="menubutton" href="https://linkedin.com/in/miro-e-6664b3171" target="_blank"><div class="fa fa-linkedin" aria-label="LinkedIn"></div></a>
 				</div>
 			</div>
