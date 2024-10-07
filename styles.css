@@ -20,7 +20,7 @@ html, body {
 	body .navbar,
 	body .content-field,
 	hr {
-		max-width: calc(1000px - 10%);
+		max-width: 1000px;
 	}
 
 
