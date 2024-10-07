@@ -423,7 +423,7 @@ footer {
 
 	.content-field {
 		align-items: flex-start !important;
-		width: 90% !important;
+		width: -webkit-fill-available !important;
 	}
 
 	.pictureframe {
