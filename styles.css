@@ -244,11 +244,6 @@ main {
 		border-radius: 8px;
 	}
 
-		.sample:hover {
-			transition: 0.1s ease-in-out;
-			width: 120%;
-		}
-
 		.card img,
 		.sample img {
 			-webkit-filter: drop-shadow(16px 16px 16px rgba(0,0,0,0.15))
