@@ -126,7 +126,6 @@ header[active] {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		height: 100%;
 		gap: 0 32px;
 	}
 
