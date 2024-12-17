@@ -30,7 +30,7 @@ class MyHeader extends HTMLElement {
 				<div class="menu">
 					<a class="menubutton" href="index.html#worksamples">Work&nbsp;samples</a>
     					<a class="menubutton" href="index.html#aboutme">About&nbsp;me</a>
-					<a class="menubutton" href="https://linkedin.com/in/miro-eskelinen" target="_blank"><div class="fa fa-linkedin" aria-label="LinkedIn"></div></a>
+					<a class="menubutton" href="https://linkedin.com/in/miro-eskelinen" target="_blank"><i class="fa-brands fa-linkedin" aria-label="LinkedIn"></i></a>
 				</div>
 			</div>
 		</header>
