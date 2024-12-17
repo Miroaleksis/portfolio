@@ -355,12 +355,10 @@ footer {
 
 	nav {
 		position: fixed;
-		top: 0;
 		right: 0; /* Tulee olla 0, right/left vaikuttaa animaatioon */
 		flex-direction: column;
 		width: 0;
 		height: 100%;
-		align-items: flex-start;
 		background-color: var(--primary);
 		color: var(--secondary);
 		transition: width 400ms ease-in-out;
@@ -384,9 +382,7 @@ footer {
 
 	#menu-toggle:checked ~ nav { /* Kun menu on auki */
 		display: flex;
-		justify-content: flex-start;
-		height: 100%;
-		width: 90%;
+		width: -webkit-fill-available;
 		padding: 50px 5% 0 5%;
 	}
 	
