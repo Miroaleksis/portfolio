@@ -50,10 +50,10 @@ class MyFooter extends HTMLElement {
 			<div class="navbar">
 				<div class="footersection">
 					<div class="minisection">
-						<i class="material-symbols-outlined md-regular">phone</i>&nbsp;+358 50 518 2107
+						<i class="fa fa-envelope"></i>&nbsp;+358 50 518 2107
 					</div>
 					<div class="minisection">
-						<i class="material-symbols-outlined md-regular">mail</i>&nbsp;miro.eskelinen@gmail.com
+						<i class="fa fa-phone"></i>&nbsp;miro.eskelinen@gmail.com
 					</div>
 				</div>
 				<p style="font-size: 10px;"><span>&#169;</span> Miro Eskelinen | Built with HTML, CSS &amp; a teaspoon of Javascript</p>
