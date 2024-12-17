@@ -282,11 +282,6 @@ main {
 		width: fit-content !important;
 	}
 
-	.badge {
-		width: 80px;
-		height: 80px;
-	}
-
 	.tag {
 		width: fit-content;
 		padding: 8px 16px;
@@ -302,12 +297,6 @@ main {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 8px;
-	}
-
-	.headertags {
-		justify-content: center;
-		margin-top: -16px;
-		margin-bottom: 16px;
 	}
 
 
