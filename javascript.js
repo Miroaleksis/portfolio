@@ -21,17 +21,17 @@ class MyHeader extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
 		<header>
-			<div class="navbar">
+			<div class="wrap">
 				<a class="logo-container" href="index.html">Miro Eskelinen</a>
 				<input id="menu-toggle" type="checkbox"/>
 				<label class="hamburger-container" for="menu-toggle">
 					<div class="hamburger" aria-label="Menu" role="button"></div>
 				</label>
-				<div class="menu">
+				<nav>
 					<a class="menubutton" href="index.html#worksamples">Work&nbsp;samples</a>
     					<a class="menubutton" href="index.html#aboutme">About&nbsp;me</a>
 					<a class="menubutton fa fa-linkedin-square" aria-label="LinkedIn" href="https://linkedin.com/in/miro-eskelinen" target="_blank" style="font-size: 1.25em;"></a>
-				</div>
+				</nav>
 			</div>
 		</header>
 		`
@@ -47,7 +47,7 @@ class MyFooter extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
 		<footer>
-			<div class="navbar">
+			<div class="wrap">
 				<div class="footersection">
 					<div class="minisection">
 						<i class="fa fa-envelope"></i>&nbsp;+358 50 518 2107
