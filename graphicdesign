@@ -45,18 +45,25 @@
 		<div class="content-field">
 			<div class="column">
 				<div class="content-field sample">
-					<img src="Liitteet/Staffroom/Logos.png" alt="Logos">
+					<img src="Liitteet/Staffroom/Brand.png" alt="Staffroom">
 				</div>
 				<div class="content-field sample">
-					<img src="Liitteet/Staffroom/Flyers.png" alt="Flyers">
+					<img src="Liitteet/Citycon/Collage.png" alt="Citycon">
 				</div>
 			</div>
 			<div class="column">
 				<div class="content-field sample">
-					<img src="Liitteet/Staffroom/Rollup-transparent.png" alt="Rollup">
+					<img src="Liitteet/Greenglow/Greenglow.png" alt="Greenglow">
 				</div>
 				<div class="content-field sample">
-					<img src="Liitteet/Staffroom/Form-transparent.png" alt="Form">
+					<img src="Liitteet/Instrumentarium/Collage.png" alt="Instrumentarium">
+				</div>
+			</div>
+			<div class="column">
+				<div class="content-field sample">
+					<img src="Liitteet/Citymarket/Collage.png" alt="Citymarket">
+				</div>
+				<div class="content-field sample">
 				</div>
 			</div>
 		</div>
