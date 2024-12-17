@@ -125,7 +125,6 @@ header[active] {
 	nav {
 		display: flex;
 		flex-direction: row;
-		align-items: center;
 		gap: 0 32px;
 	}
 
@@ -381,7 +380,7 @@ footer {
 
 	#menu-toggle:checked ~ nav { /* Kun menu on auki */
 		display: flex;
-		width: -webkit-fill-available;
+		width: 90%;
 		padding: 50px 5% 0 5%;
 	}
 	
