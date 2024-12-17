@@ -18,7 +18,7 @@ html, body {
 	scroll-behavior: smooth;
 }
 
-	body .navbar,
+	body .wrap,
 	body .content-field,
 	hr {
 		max-width: 1000px;
@@ -107,7 +107,7 @@ header[active] {
 	background-color: var(--primary);
 }
 
-.navbar {
+.wrap {
 	display: flex;
 	width: inherit;
 	padding: 0 5%;
@@ -122,7 +122,7 @@ header[active] {
 		font-size: 22px;
 	}
 
-	.menu {
+	nav {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -139,7 +139,7 @@ header[active] {
 			box-sizing: border-box;
 		}
 
-		.menu a:hover {
+		nav a:hover {
 			border-bottom: 1.5px solid;
 		}
 
@@ -353,7 +353,7 @@ footer {
 
 	/* Navigaatio */
 
-	.menu {
+	nav {
 		position: fixed;
 		top: 0;
 		right: 0; /* Tulee olla 0, right/left vaikuttaa animaatioon */
@@ -382,7 +382,7 @@ footer {
 		z-index: 10;
 	}
 
-	#menu-toggle:checked ~ .menu { /* Kun menu on auki */
+	#menu-toggle:checked ~ nav { /* Kun menu on auki */
 		display: flex;
 		justify-content: flex-start;
 		height: 100%;
@@ -390,7 +390,7 @@ footer {
 		padding: 50px 5% 0 5%;
 	}
 	
-	#menu-toggle:checked ~ .menu .menubutton { /* Kun menu on auki, animaatiossa tärkeä */
+	#menu-toggle:checked ~ nav .menubutton { /* Kun menu on auki, animaatiossa tärkeä */
 		display: flex;
 	}
 
@@ -398,7 +398,7 @@ footer {
 	/* Body */
 
 	.column,
-	footer .navbar {
+	footer .wrap {
 		flex-direction: column;
 		align-items: flex-start;
 	}
