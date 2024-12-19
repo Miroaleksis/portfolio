@@ -250,11 +250,12 @@ main {
 			display: flex;
 			justify-content: space-between;
 			width: -webkit-fill-available;
+			align-items: center;
 		}
 
 			.cardsection::after {
 				font-family: "FontAwesome";
-				content: "/f061";
+				content: "/f178";
 			}
 
 	.pictureframe {
