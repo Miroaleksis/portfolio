@@ -249,6 +249,7 @@ main {
 		.cardsection {
 			display: flex;
 			justify-content: space-between;
+			width: -webkit-fill-available;
 		}
 
 	.pictureframe {
