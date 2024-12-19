@@ -254,8 +254,8 @@ main {
 		}
 
 			.cardsection::after {
-				font-family: "FontAwesome";
-				content: " /f105";
+				font-family: 'FontAwesome';
+				content: '\f105';
 			}
 
 	.pictureframe {
