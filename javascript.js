@@ -48,7 +48,7 @@ class MyFooter extends HTMLElement {
 		this.innerHTML = `
 		<footer>
 			<div class="wrap">
-				<div class="footersection">
+				<div class="section">
 					<div class="minisection">
 						<i class="fa fa-envelope"></i>&nbsp;+358 50 518 2107
 					</div>
