@@ -248,9 +248,10 @@ main {
 
 		.cardsection {
 			display: flex;
-			justify-content: space-between;
+			justify-content: center;
 			width: -webkit-fill-available;
 			align-items: center;
+			gap: 4px;
 		}
 
 			.cardsection::after {
