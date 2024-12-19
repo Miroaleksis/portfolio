@@ -253,7 +253,7 @@ main {
 		}
 
 			.cardsection::after {
-				font-family: "Font Awesome 4 Free";
+				font-family: "FontAwesome";
 				content: "\f061";
 			}
 
