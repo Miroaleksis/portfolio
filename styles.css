@@ -248,12 +248,11 @@ main {
 
 		.cardsection {
 			display: flex;
-			justify-content: center;
 			width: -webkit-fill-available;
+			justify-content: center;
 			align-items: center;
 			padding: 1em 0;
 			gap: 8px;
-			font-weight: bold;
 		}
 
 			.cardsection::after {
