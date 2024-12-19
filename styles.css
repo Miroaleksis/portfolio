@@ -253,8 +253,7 @@ main {
 		}
 
 			.cardsection::after {
-				font-family: "FontAwesome";
-				content: "\f061";
+				content: " Lisätty teksti";
 			}
 
 	.pictureframe {
