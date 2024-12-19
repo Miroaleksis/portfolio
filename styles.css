@@ -252,6 +252,7 @@ main {
 			width: -webkit-fill-available;
 			align-items: center;
 			gap: 4px;
+			font-weight: bold;
 		}
 
 			.cardsection::after {
