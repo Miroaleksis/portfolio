@@ -253,7 +253,8 @@ main {
 		}
 
 			.cardsection::after {
-				content: a;
+				font-family: "Font Awesome 4 Free";
+				content: "\f061";
 			}
 
 	.pictureframe {
