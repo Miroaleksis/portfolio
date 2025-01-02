@@ -236,14 +236,19 @@ main {
 		align-items: center;
 		width: -webkit-fill-available;
 		background-color: rgba(0, 0, 0, 0.05);
-		padding: 24px;
+		padding: 40px;
 		border-radius: 8px;
-		gap: 24px;
+		gap: 32px;
 	}
 
 		.card img,
 		.sample img {
-			-webkit-filter: drop-shadow(16px 16px 16px rgba(0,0,0,0.15))
+			-webkit-filter: drop-shadow(16px 16px 16px rgba(0,0,0,0.15));
+			transition: transform .4s ease-in-out;
+		}
+
+		.card img:hover {
+			transform: scale(1.1);
 		}
 
 		.cardsection {
@@ -251,7 +256,6 @@ main {
 			width: -webkit-fill-available;
 			justify-content: center;
 			align-items: center;
-			padding: 1em 0;
 			gap: 8px;
 		}
 
