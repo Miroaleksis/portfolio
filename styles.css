@@ -322,6 +322,7 @@ main {
 
 	.sample {
 		justify-content: space-between;
+		align-items: center;
 	}
 
 
