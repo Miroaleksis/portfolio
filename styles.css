@@ -316,6 +316,10 @@ main {
 		gap: 8px;
 	}
 
+	.sample {
+		justify-content: space-between;
+	}
+
 
 
 /* FOOTER */
