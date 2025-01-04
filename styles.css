@@ -269,7 +269,7 @@ main {
 			outline-offset: -1.5px;	
 		}
 
-		cardsection::after:hover {
+		cardsection:hover::after {
 			background-color: var(--primary);
 			color: var(--secondary);
 			outline: none;
