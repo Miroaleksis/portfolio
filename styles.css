@@ -274,18 +274,19 @@ main {
 		margin: 0;
 	}
 
-	.button, .secondarybutton:hover {
+	.button {
+		display: flex;
+		align-items: center;
 		padding: 10px 20px;
 		border-radius: 4px;
 		background-color: var(--primary);
 		color: var(--secondary);
 		outline: none;
 		white-space: nowrap;
+		gap: 24px;
 	}
 
-	.secondarybutton, .button:hover {
-		padding: 10px 20px;
-		border-radius: 4px;
+	.button:hover {
 		background: none;
 		color: var(--primary);
 		outline: 1.5px solid;
