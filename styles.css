@@ -338,6 +338,7 @@ main {
 		justify-content: space-between;
 		gap: 48px;
 		align-items: center;
+		margin-top: 48px;
 	}
 
 
