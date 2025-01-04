@@ -242,7 +242,7 @@ main {
 
 		.card img,
 		.sample img {
-			-webkit-filter: drop-shadow(16px 16px 16px rgba(0,0,0,0.15));
+			/* -webkit-filter: drop-shadow(16px 16px 16px rgba(0,0,0,0.15)); */
 			transition: transform .4s ease-in-out;
 		}
 
