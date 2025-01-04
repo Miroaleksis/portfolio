@@ -269,6 +269,12 @@ main {
 			outline-offset: -1.5px;	
 		}
 
+		cardsection::after:hover {
+			background-color: var(--primary);
+			color: var(--secondary);
+			outline: none;
+		}
+
 	.pictureframe {
 		overflow: hidden;
 		align-self: center;
@@ -301,11 +307,6 @@ main {
 		outline: 1.5px solid;
 		outline-offset: -1.5px;
 	}
-
-		.button::after {
-			font-family: 'FontAwesome';
-			content: '\f105';
-		}
 
 	.info {
 		width: fit-content !important;
