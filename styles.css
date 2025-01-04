@@ -240,9 +240,7 @@ main {
 		gap: 32px;
 	}
 
-		.card img,
-		.sample img {
-			/* -webkit-filter: drop-shadow(16px 16px 16px rgba(0,0,0,0.15)); */
+		.card img, .sample img {
 			transition: transform .4s ease-in-out;
 		}
 
@@ -255,7 +253,7 @@ main {
 			width: -webkit-fill-available;
 			justify-content: space-between;
 			align-items: center;
-			gap: 8px;
+			gap: 24px;
 		}
 
 	.pictureframe {
@@ -346,6 +344,10 @@ footer {
 		display:  flex;
 		flex-direction: column;
 		gap: 4px;
+	}
+
+	.section h3 {
+		padding: 0;
 	}
 
 		.minisection {
