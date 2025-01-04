@@ -63,7 +63,7 @@ html, body {
 	h3 {
 		font-weight: 700;
 		font-size: 1.3em;
-		margin: 0 0 -14px 0;
+		margin: 0 0 -16px 0;
 		line-height: 1;
 	}
 
@@ -330,8 +330,8 @@ main {
 	}
 
 	.sample {
-		justify-content: space-between;
 		align-items: center;
+		margin-bottom: 40px;
 	}
 
 
