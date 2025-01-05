@@ -314,12 +314,15 @@ main {
 	}
 
 	.tag {
+		display: flex;
+		align-items: center;
 		width: fit-content;
 		padding: 8px 16px;
 		border-radius: 80px;
 		background-color: var(--primary-transparent);
 		white-space: nowrap;
 		font-size: 0.8em;
+		gap: 8px;
 	}
 
 	.tagsection {
