@@ -240,7 +240,8 @@ main {
 		margin: 24px 0;
 	}
 
-		.card .content-field {
+		.imageframe {
+			display: flex;
 			padding: 40px;
 			background-color: var(--primary-transparent);
 			border-radius: 8px;
