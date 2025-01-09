@@ -235,7 +235,6 @@ main {
 		justify-content: space-between;
 		align-items: center;
 		width: -webkit-fill-available;
-		background-color: var(--primary-transparent);
 		gap: 24px;
 		border-radius: 8px;
 		margin: 24px 0;
@@ -245,6 +244,7 @@ main {
 			padding: 24px;
 			background-color: var(--primary-transparent);
 			border-radius: 8px;
+			width: -webkit-fill-available;
 		}
 
 		.card img, .sample img {
