@@ -242,6 +242,7 @@ main {
 
 		.imageframe {
 			display: flex;
+			align-items: center;
 			padding: 40px;
 			background-color: var(--primary-transparent);
 			border-radius: 8px;
