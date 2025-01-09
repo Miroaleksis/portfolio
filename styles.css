@@ -241,7 +241,7 @@ main {
 	}
 
 		.card .content-field {
-			padding: 24px;
+			padding: 40px;
 			background-color: var(--primary-transparent);
 			border-radius: 8px;
 			width: -webkit-fill-available;
