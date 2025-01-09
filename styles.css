@@ -236,10 +236,16 @@ main {
 		align-items: center;
 		width: -webkit-fill-available;
 		background-color: var(--primary-transparent);
-		padding: 40px;
-		gap: 40px;
+		gap: 24px;
 		border-radius: 8px;
+		margin: 24px 0;
 	}
+
+		.card .content-field {
+			padding: 24px;
+			background-color: var(--primary-transparent);
+			border-radius: 8px;
+		}
 
 		.card img, .sample img {
 			transition: transform .4s ease-in-out;
